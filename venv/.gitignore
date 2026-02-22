@@ -1,0 +1,19 @@
+# Virtual environment
+venv/
+etc/
+Include/
+Lib/
+Scripts/
+share/
+pyvenv.cfg
+
+# Python cache
+__pycache__/
+*.pyc
+
+# File konfigurasi lokal (jika ada)
+.streamlit/secrets.toml   # jika ada file secrets
+
+# IDE (opsional)
+.vscode/
+.idea/
