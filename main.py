@@ -31,6 +31,10 @@ b2_1 = st.Page(
     title="Latihan 1"
 )
 
+b2_2 = st.Page(
+    "pages/bab_2/b2_2.py",
+    title="Latihan 2"
+)
 
 # =========================
 # NAVIGATION (HIDDEN)
@@ -38,7 +42,7 @@ b2_1 = st.Page(
 
 contents = {
     "": [cover],
-    "_materi": [b1_1, b1_2, b2_1]
+    "_materi": [b1_1, b1_2, b2_1, b2_2]
 }
 
 pg = st.navigation(contents, position="hidden")
@@ -60,7 +64,7 @@ with st.sidebar:
 
         with st.expander("Marketing"):
             st.page_link(b2_1)
-
+            st.page_link(b2_2)
 
 # =========================
 # RUN PAGE
