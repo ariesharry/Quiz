@@ -26,6 +26,16 @@ b1_2 = st.Page(
     title="Latihan 2 - Leadership"
 )
 
+b1_3 = st.Page(
+    "pages/bab_1/b1_3.py",
+    title="Latihan 3 - Function and Skills"
+)
+
+b1_4 = st.Page(
+    "pages/bab_1/b1_4.py",
+    title="Latihan 4 - Motivation"
+)
+
 b2_1 = st.Page(
     "pages/bab_2/b2_1.py",
     title="Latihan 1"
@@ -42,7 +52,7 @@ b2_2 = st.Page(
 
 contents = {
     "": [cover],
-    "_materi": [b1_1, b1_2, b2_1, b2_2]
+    "_materi": [b1_1, b1_2, b2_1, b2_2, b1_3, b1_4]
 }
 
 pg = st.navigation(contents, position="hidden")
@@ -61,6 +71,8 @@ with st.sidebar:
         with st.expander("Management", expanded=True):
             st.page_link(b1_1)
             st.page_link(b1_2)
+            st.page_link(b1_3)
+            st.page_link(b1_4)
 
         with st.expander("Marketing"):
             st.page_link(b2_1)
