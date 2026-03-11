@@ -56,13 +56,23 @@ b2_4 = st.Page(
     title="Latihan 4"
 )
 
+b2_5 = st.Page(
+    "pages/bab_2/b2_5.py",
+    title="Latihan 5"
+)
+
+b2_6 = st.Page(
+    "pages/bab_2/b2_6.py",
+    title="Latihan 6"
+)
+
 # =========================
 # NAVIGATION (HIDDEN)
 # =========================
 
 contents = {
     "": [cover],
-    "_materi": [b1_1, b1_2, b2_1, b2_2, b1_3, b1_4, b2_3, b2_4]
+    "_materi": [b1_1, b1_2, b2_1, b2_2, b1_3, b1_4, b2_3, b2_4, b2_5, b2_6]
 }
 
 pg = st.navigation(contents, position="hidden")
@@ -89,6 +99,8 @@ with st.sidebar:
             st.page_link(b2_2)
             st.page_link(b2_3)
             st.page_link(b2_4)
+            st.page_link(b2_5)
+            st.page_link(b2_6)
 
 # =========================
 # RUN PAGE
