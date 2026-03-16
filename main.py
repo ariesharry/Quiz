@@ -2,118 +2,77 @@ import streamlit as st
 
 st.set_page_config(page_title="E-Modul Interaktif", layout="wide", initial_sidebar_state="expanded")
 
-
+# =========================
+# DATA SEMUA HALAMAN (URUTAN SESUAI TAMPILAN)
+# =========================
+# Format: (file_path, judul_tampilan, nama_bab)
+halaman_data = [
+    # Management
+    ("pages/bab_1/b1_1.py", "Latihan 1 - Fundamental of Management", "Management"),
+    ("pages/bab_1/b1_2.py", "Latihan 2 - Leadership", "Management"),
+    ("pages/bab_1/b1_3.py", "Latihan 3 - Function and Skills", "Management"),
+    ("pages/bab_1/b1_4.py", "Latihan 4 - Motivation", "Management"),
+    ("pages/bab_1/b1_5.py", "Latihan 5 - Week 3", "Management"),
+    ("pages/bab_1/b1_6.py", "Latihan 6 - Week 4", "Management"),
+    ("pages/bab_1/b1_7.py", "Latihan 7 - Week 4", "Management"),
+    # Marketing
+    ("pages/bab_2/b2_1.py", "Latihan 1", "Marketing"),
+    ("pages/bab_2/b2_2.py", "Latihan 2", "Marketing"),
+    # Management lagi
+    
+    # Marketing lagi
+    ("pages/bab_2/b2_3.py", "Latihan 3", "Marketing"),
+    ("pages/bab_2/b2_4.py", "Latihan 4", "Marketing"),
+    ("pages/bab_2/b2_5.py", "Latihan 5", "Marketing"),
+    ("pages/bab_2/b2_6.py", "Latihan 6", "Marketing"),
+    # Management terakhir
+    
+]
 
 # =========================
-# PAGE OBJECT (PATH AKURAT)
+# GENERATE OBJEK st.Page DAN KELOMPOKKAN PER BAB
 # =========================
+pages_by_bab = {}       # dict: {nama_bab: list_of_page_objects}
+all_materi_pages = []   # list urut semua halaman (untuk st.navigation)
 
-cover = st.Page(
-    "pages/cover.py",
-    title="Home",
-    icon=":material/home:"
-)
+for file, title, bab in halaman_data:
+    page_obj = st.Page(file, title=title)
+    all_materi_pages.append(page_obj)
+    
+    if bab not in pages_by_bab:
+        pages_by_bab[bab] = []
+    pages_by_bab[bab].append(page_obj)
 
-
-# --- Bab 1
-b1_1 = st.Page(
-    "pages/bab_1/b1_1.py",
-    title="Latihan 1 - Fundamental of Management"
-)
-
-b1_2 = st.Page(
-    "pages/bab_1/b1_2.py",
-    title="Latihan 2 - Leadership"
-)
-
-b1_3 = st.Page(
-    "pages/bab_1/b1_3.py",
-    title="Latihan 3 - Function and Skills"
-)
-
-b1_4 = st.Page(
-    "pages/bab_1/b1_4.py",
-    title="Latihan 4 - Motivation"
-)
-
-b1_5 = st.Page(
-    "pages/bab_1/b1_5.py",
-    title="Latihan 5 - Week 3"
-)
-
-
-
-b2_1 = st.Page(
-    "pages/bab_2/b2_1.py",
-    title="Latihan 1"
-)
-
-b2_2 = st.Page(
-    "pages/bab_2/b2_2.py",
-    title="Latihan 2"
-)
-
-b2_3 = st.Page(
-    "pages/bab_2/b2_3.py",
-    title="Latihan 3"
-)
-
-b2_4 = st.Page(
-    "pages/bab_2/b2_4.py",
-    title="Latihan 4"
-)
-
-b2_5 = st.Page(
-    "pages/bab_2/b2_5.py",
-    title="Latihan 5"
-)
-
-b2_6 = st.Page(
-    "pages/bab_2/b2_6.py",
-    title="Latihan 6"
-)
+# =========================
+# HALAMAN KHUSUS (COVER)
+# =========================
+cover = st.Page("pages/cover.py", title="Home", icon=":material/home:")
 
 # =========================
 # NAVIGATION (HIDDEN)
 # =========================
-
 contents = {
     "": [cover],
-    "_materi": [b1_1, b1_2, b2_1, b2_2, b1_3, b1_4, b2_3, b2_4, b2_5, b2_6, b1_5]
+    "_materi": all_materi_pages,   # semua halaman materi dalam satu section
 }
-
 pg = st.navigation(contents, position="hidden")
 
 # =========================
 # SIDEBAR CUSTOM
 # =========================
-
 with st.sidebar:
     st.page_link(cover, label="Home", icon=":material/home:")
-
     st.divider()
     st.markdown("### Table of Contents")
 
-    with st.container(border=False):
-        with st.expander("Management", expanded=True):
-            st.page_link(b1_1)
-            st.page_link(b1_2)
-            st.page_link(b1_3)
-            st.page_link(b1_4)
-            st.page_link(b1_5)
-
-        with st.expander("Marketing"):
-            st.page_link(b2_1)
-            st.page_link(b2_2)
-            st.page_link(b2_3)
-            st.page_link(b2_4)
-            st.page_link(b2_5)
-            st.page_link(b2_6)
+    # Tampilkan expander per bab (urutan bab sesuai kemunculan pertama di data)
+    bab_list = list(pages_by_bab.keys())  # ["Management", "Marketing"] (urutan sesuai data)
+    for i, bab in enumerate(bab_list):
+        with st.expander(bab, expanded=(i == 0)):   # expanded hanya bab pertama
+            for page in pages_by_bab[bab]:
+                st.page_link(page)
 
 # =========================
 # RUN PAGE
 # =========================
-
 pg.run()
-
-
