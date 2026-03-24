@@ -356,6 +356,175 @@ soal_list = [
         "jawaban_benar": "primary",
         "pembahasan": "**Pembahasan:** Karena The Warehouse melakukan studi khusus untuk memperoleh informasi tentang sikap konsumen, data yang dikumpulkan adalah data primer."
     },
+    {
+    "tipe": "pilihan_ganda",
+    "pertanyaan": "28. In the buyer behaviour model, 'what they buy, where and how much' refers to _____.",
+    "pilihan": [
+      "buyer characteristics",
+      "marketing stimuli",
+      "buyer responses",
+      "environmental forces",
+      "psychological processes"
+    ],
+    "jawaban_benar": "buyer responses",
+    "pembahasan": "**Pembahasan:** Frasa ini menggambarkan hasil akhir dari proses keputusan konsumen, yaitu respons pembeli terhadap stimulus pemasaran."
+    },
+    {
+        "tipe": "pilihan_ganda",
+        "pertanyaan": "29. Which of the following is NOT part of buyer responses?",
+        "pilihan": [
+        "Product choice",
+        "Brand choice",
+        "Dealer choice",
+        "Personality traits",
+        "Purchase timing"
+        ],
+        "jawaban_benar": "Personality traits",
+        "pembahasan": "**Pembahasan:** Personality traits termasuk karakteristik pembeli, bukan respons pembeli."
+    },
+    {
+        "tipe": "pilihan_ganda",
+        "pertanyaan": "30. The question 'where to buy' is most closely related to _____.",
+        "pilihan": [
+        "brand choice",
+        "dealer choice",
+        "product choice",
+        "purchase frequency",
+        "problem recognition"
+        ],
+        "jawaban_benar": "dealer choice",
+        "pembahasan": "**Pembahasan:** 'Where to buy' berkaitan dengan pemilihan tempat atau saluran distribusi (dealer choice)."
+    },
+    {
+        "tipe": "pilihan_ganda",
+        "pertanyaan": "31. The amount of money a consumer spends is part of _____.",
+        "pilihan": [
+        "purchase quantity",
+        "psychological factors",
+        "cultural influences",
+        "reference groups",
+        "perception"
+        ],
+        "jawaban_benar": "purchase quantity",
+        "pembahasan": "**Pembahasan:** 'How much' mencerminkan jumlah pembelian atau kuantitas yang dibeli."
+    },
+    {
+        "tipe": "pilihan_ganda",
+        "pertanyaan": "32. Which element influences 'what they buy' the most directly?",
+        "pilihan": [
+        "product features and benefits",
+        "government regulations",
+        "climate conditions",
+        "geographical location",
+        "population size"
+        ],
+        "jawaban_benar": "product features and benefits",
+        "pembahasan": "**Pembahasan:** Keputusan produk sangat dipengaruhi oleh atribut dan manfaat yang ditawarkan produk."
+    },
+    {
+        "tipe": "pilihan_ganda",
+        "pertanyaan": "33. Cultural factors primarily influence consumer behaviour by _____.",
+        "pilihan": [
+        "determining pricing strategies",
+        "shaping basic values and preferences",
+        "setting distribution channels",
+        "controlling supply chains",
+        "managing inventory levels"
+        ],
+        "jawaban_benar": "shaping basic values and preferences",
+        "pembahasan": "**Pembahasan:** Budaya membentuk nilai dasar, persepsi, dan preferensi yang memengaruhi keputusan pembelian."
+    },
+    {
+        "tipe": "pilihan_ganda",
+        "pertanyaan": "34. Social factors such as family and reference groups mainly affect _____.",
+        "pilihan": [
+        "internal processing speed",
+        "consumer attitudes and behaviour",
+        "production efficiency",
+        "economic growth",
+        "technological adoption"
+        ],
+        "jawaban_benar": "consumer attitudes and behaviour",
+        "pembahasan": "**Pembahasan:** Faktor sosial memengaruhi sikap, preferensi, dan keputusan pembelian konsumen."
+    },
+    {
+        "tipe": "pilihan_ganda",
+        "pertanyaan": "35. Psychological factors in consumer behaviour include all EXCEPT _____.",
+        "pilihan": [
+        "motivation",
+        "perception",
+        "learning",
+        "beliefs and attitudes",
+        "distribution channels"
+        ],
+        "jawaban_benar": "distribution channels",
+        "pembahasan": "**Pembahasan:** Distribution channels adalah bagian dari strategi pemasaran, bukan faktor psikologis."
+    },
+    {
+        "tipe": "pilihan_ganda",
+        "pertanyaan": "36. The 'black box' in the buyer behaviour model refers to _____.",
+        "pilihan": [
+        "marketing strategy",
+        "buyer’s characteristics and decision process",
+        "external environment",
+        "distribution systems",
+        "pricing mechanisms"
+        ],
+        "jawaban_benar": "buyer’s characteristics and decision process",
+        "pembahasan": "**Pembahasan:** Black box menggambarkan proses internal konsumen yang tidak terlihat langsung oleh pemasar."
+    },
+    {
+        "tipe": "pilihan_ganda",
+        "pertanyaan": "37. Which of the following best describes 'purchase timing'?",
+        "pilihan": [
+        "when consumers decide to buy",
+        "how much consumers spend",
+        "where consumers shop",
+        "why consumers complain",
+        "what consumers prefer"
+        ],
+        "jawaban_benar": "when consumers decide to buy",
+        "pembahasan": "**Pembahasan:** Purchase timing berkaitan dengan kapan konsumen melakukan pembelian."
+    },
+    {
+        "tipe": "pilihan_ganda",
+        "pertanyaan": "38. Marketing stimuli include all of the following EXCEPT _____.",
+        "pilihan": [
+        "product",
+        "price",
+        "place",
+        "promotion",
+        "culture"
+        ],
+        "jawaban_benar": "culture",
+        "pembahasan": "**Pembahasan:** Marketing stimuli adalah 4P (product, price, place, promotion), sedangkan culture termasuk faktor lingkungan."
+    },
+    {
+        "tipe": "pilihan_ganda",
+        "pertanyaan": "39. Which factor would most likely influence 'where consumers buy' in online shopping?",
+        "pilihan": [
+        "website usability",
+        "consumer age only",
+        "weather conditions",
+        "factory location",
+        "raw material costs"
+        ],
+        "jawaban_benar": "website usability",
+        "pembahasan": "**Pembahasan:** Kemudahan penggunaan website sangat memengaruhi keputusan konsumen dalam memilih tempat membeli secara online."
+    },
+    {
+        "tipe": "pilihan_ganda",
+        "pertanyaan": "40. The ultimate goal of studying consumer behaviour is to _____.",
+        "pilihan": [
+        "increase production capacity",
+        "understand and predict buyer responses",
+        "reduce operational costs",
+        "control competitors",
+        "standardise global markets"
+        ],
+        "jawaban_benar": "understand and predict buyer responses",
+        "pembahasan": "**Pembahasan:** Tujuan utama adalah memahami dan memprediksi bagaimana konsumen merespons strategi pemasaran."
+    },
 
     # ========== ESAI (1–5) ==========
     {
