@@ -1,285 +1,350 @@
 import streamlit as st
 
+# =========================
+# QUESTION DATA (REFACTORED - MORE DETAILED & LONGER)
+# =========================
 soal_list = [
+
+# =========================
+# 20 MULTIPLE CHOICE (ENRICHED WITH SCENARIOS)
+# =========================
 {
     "tipe": "pilihan_ganda",
-    "pertanyaan": "What is the best definition of ethics?",
+    "pertanyaan": "A company is facing a situation where it could increase profits by manipulating financial reports, but that action would harm small shareholders. The manager chooses to remain honest even though profits are lower. Which principle best describes the manager's action?",
     "pilihan": [
-        "Rules enforced by the government",
-        "A set of moral principles that define right and wrong",
-        "Company policies and procedures",
-        "Cultural traditions only",
-        "Personal preferences without standards"
+        "Maximizing profit at any cost",
+        "Applying moral principles in business decisions",
+        "Ignoring stakeholders",
+        "Following only the law",
+        "Prioritizing personal gain"
     ],
-    "jawaban_benar": "A set of moral principles that define right and wrong"
+    "jawaban_benar": "Applying moral principles in business decisions"
 },
 {
     "tipe": "pilihan_ganda",
-    "pertanyaan": "Business ethics primarily deals with:",
+    "pertanyaan": "An employee at a factory discovers that the company is illegally dumping toxic waste into the river. He reports this finding to environmental authorities even though he knows he will be fired. This employee's action is known as:",
     "pilihan": [
-        "Legal compliance only",
-        "Financial performance",
-        "Ethical issues in a commercial context",
-        "Government regulations",
-        "Employee contracts"
+        "Marketing activity",
+        "Reporting unethical practices (whistleblowing)",
+        "Employee recruitment process",
+        "Selling illegal products",
+        "Financial planning"
     ],
-    "jawaban_benar": "Ethical issues in a commercial context"
+    "jawaban_benar": "Reporting unethical practices"
 },
 {
     "tipe": "pilihan_ganda",
-    "pertanyaan": "Which of the following is a benefit of ethical behavior in organizations?",
+    "pertanyaan": "A company leader consistently shows honesty, keeps promises, and does not engage in corruption even under pressure to cover up mistakes. The most prominent personal quality of this leader is:",
     "pilihan": [
-        "Increased legal risk",
-        "Reduced customer trust",
-        "Improved company image",
-        "Higher employee turnover",
-        "Lower accountability"
+        "Dishonesty",
+        "Consistency in moral principles (integrity)",
+        "Ignoring rules",
+        "Avoiding responsibility",
+        "Breaking laws"
     ],
-    "jawaban_benar": "Improved company image"
+    "jawaban_benar": "Consistency in moral principles"
 },
 {
     "tipe": "pilihan_ganda",
-    "pertanyaan": "What is the main difference between law and ethics?",
+    "pertanyaan": "In a board meeting, the CFO presents the actual data about the company's losses, including potential risks, without hiding any facts. This attitude reflects the principle of:",
     "pilihan": [
-        "Law is optional, ethics is mandatory",
-        "Ethics is enforced by government",
-        "Law is a minimum standard, ethics goes beyond it",
-        "There is no difference",
-        "Ethics applies only to individuals"
+        "Hiding information",
+        "Open communication (transparency)",
+        "Avoiding responsibility",
+        "Increasing profit by any means",
+        "Overly controlling employees"
     ],
-    "jawaban_benar": "Law is a minimum standard, ethics goes beyond it"
+    "jawaban_benar": "Open communication"
 },
 {
     "tipe": "pilihan_ganda",
-    "pertanyaan": "An ethical dilemma occurs when:",
+    "pertanyaan": "GreenLeaf Inc. voluntarily sets aside part of its profits to build city parks, recycle waste, and provide scholarships. These activities are a form of:",
     "pilihan": [
-        "There is a clear right answer",
-        "Only one option is available",
-        "There are conflicting moral choices",
-        "Laws are strictly followed",
-        "No consequences exist"
+        "Corporate Social Responsibility (CSR)",
+        "Company Sales Report",
+        "Customer Service Role",
+        "Corporate Strategy Rules",
+        "Central System Regulation"
     ],
-    "jawaban_benar": "There are conflicting moral choices"
+    "jawaban_benar": "Corporate Social Responsibility"
 },
 {
     "tipe": "pilihan_ganda",
-    "pertanyaan": "Which of the following is NOT a characteristic of an ethical dilemma?",
+    "pertanyaan": "An accountant deliberately inflates revenue figures to make the financial statements look healthier and boost stock prices. Legally and ethically, this action is classified as:",
     "pilihan": [
-        "Conflicting values",
-        "Clear right and wrong answer",
-        "Significant consequences",
-        "Time pressure",
-        "Multiple alternatives"
+        "Honest reporting",
+        "Intentional deception (fraud)",
+        "Financial transparency",
+        "Legal compliance",
+        "Ethical action"
     ],
-    "jawaban_benar": "Clear right and wrong answer"
+    "jawaban_benar": "Intentional deception"
 },
 {
     "tipe": "pilihan_ganda",
-    "pertanyaan": "Which factor contributes to ethical problems in business?",
+    "pertanyaan": "After a product fails in the market, the product manager does not blame the team or external factors; instead, he acknowledges his own strategic mistake and accepts scrutiny. This attitude demonstrates the principle of:",
     "pilihan": [
-        "Strong moral values",
-        "High transparency",
-        "Personal gain and self-interest",
-        "Clear regulations",
-        "Ethics training"
+        "Avoiding responsibility",
+        "Taking responsibility (accountability)",
+        "Ignoring outcomes",
+        "Delegating tasks without control",
+        "Maximizing profit"
     ],
-    "jawaban_benar": "Personal gain and self-interest"
+    "jawaban_benar": "Taking responsibility"
 },
 {
     "tipe": "pilihan_ganda",
-    "pertanyaan": "Ego strength refers to:",
-    "pilihan": [
-        "Physical strength of an individual",
-        "Ability to influence others",
-        "Strength of a person's moral convictions",
-        "Level of intelligence",
-        "Position in organization"
-    ],
-    "jawaban_benar": "Strength of a person's moral convictions"
-},
-{
-    "tipe": "pilihan_ganda",
-    "pertanyaan": "Locus of control is defined as:",
-    "pilihan": [
-        "Control over other people",
-        "Degree to which people believe they control their own fate",
-        "Company control system",
-        "Legal authority",
-        "External pressure"
-    ],
-    "jawaban_benar": "Degree to which people believe they control their own fate"
-},
-{
-    "tipe": "pilihan_ganda",
-    "pertanyaan": "At which stage of moral development do individuals follow rules to avoid punishment?",
-    "pilihan": [
-        "Post-conventional",
-        "Conventional",
-        "Pre-conventional",
-        "Universal stage",
-        "Ethical stage"
-    ],
-    "jawaban_benar": "Pre-conventional"
-},
-{
-    "tipe": "pilihan_ganda",
-    "pertanyaan": "Ethical intensity refers to:",
-    "pilihan": [
-        "Level of company profit",
-        "Degree of legal enforcement",
-        "Level of concern about an ethical issue",
-        "Employee motivation",
-        "Organizational hierarchy"
-    ],
-    "jawaban_benar": "Level of concern about an ethical issue"
-},
-{
-    "tipe": "pilihan_ganda",
-    "pertanyaan": "Which component of ethical intensity refers to total harm or benefit?",
-    "pilihan": [
-        "Social consensus",
-        "Proximity",
-        "Magnitude of consequences",
-        "Probability of effect",
-        "Concentration effect"
-    ],
-    "jawaban_benar": "Magnitude of consequences"
-},
-{
-    "tipe": "pilihan_ganda",
-    "pertanyaan": "Which organizational factor most strongly influences ethical behavior?",
-    "pilihan": [
-        "Office design",
-        "Manager behavior",
-        "Salary level",
-        "Work hours",
-        "Job title"
-    ],
-    "jawaban_benar": "Manager behavior"
-},
-{
-    "tipe": "pilihan_ganda",
-    "pertanyaan": "The principle of utilitarianism focuses on:",
+    "pertanyaan": "In ethical decision-making, the approach that seeks to produce the greatest happiness for the greatest number of people is called:",
     "pilihan": [
         "Individual rights",
-        "Personal virtue",
-        "Maximizing overall benefits over harms",
-        "Strict legal compliance",
+        "Maximizing overall benefits (utilitarianism)",
+        "Legal rules",
+        "Personal gain",
         "Cultural norms"
     ],
-    "jawaban_benar": "Maximizing overall benefits over harms"
+    "jawaban_benar": "Maximizing overall benefits"
 },
 {
     "tipe": "pilihan_ganda",
-    "pertanyaan": "Distributive justice emphasizes:",
+    "pertanyaan": "A judge in a business case rules that each harmed party must receive fair compensation regardless of social status. This decision is based on an ethical theory that emphasizes:",
     "pilihan": [
-        "Profit maximization",
-        "Fairness and equity",
-        "Personal gain",
-        "Legal enforcement",
-        "Speed of decision-making"
+        "Profit",
+        "Fairness (justice)",
+        "Speed of process",
+        "Power",
+        "Control"
     ],
-    "jawaban_benar": "Fairness and equity"
+    "jawaban_benar": "Fairness"
+},
+{
+    "tipe": "pilihan_ganda",
+    "pertanyaan": "A procurement manager owns shares in a major supplier. When choosing a vendor, he tends to favor that supplier even though it charges higher prices. This situation is an example of:",
+    "pilihan": [
+        "Following rules properly",
+        "Personal interests interfering with duties (conflict of interest)",
+        "Reasonable profit increase",
+        "Employee collaboration",
+        "Customer satisfaction"
+    ],
+    "jawaban_benar": "Personal interests interfering with duties"
+},
+{
+    "tipe": "pilihan_ganda",
+    "pertanyaan": "A CEO often speaks about integrity, but when a mistake occurs, he covers it up and fires the person who reported it. This type of leadership fails to demonstrate ethical leadership because the leader fails to:",
+    "pilihan": [
+        "Ignore employees",
+        "Set a moral example",
+        "Maximize profit",
+        "Avoid risk",
+        "Control staff rigidly"
+    ],
+    "jawaban_benar": "Set a moral example"
+},
+{
+    "tipe": "pilihan_ganda",
+    "pertanyaan": "A timber company chooses to replant the trees it cuts, use renewable energy, and ensure its operations do not damage the ecosystem in the long term. This practice reflects the principle of:",
+    "pilihan": [
+        "Short-term gain",
+        "Long-term balance (sustainability)",
+        "Ignoring the environment",
+        "Increasing waste",
+        "Reducing ethics"
+    ],
+    "jawaban_benar": "Long-term balance"
+},
+{
+    "tipe": "pilihan_ganda",
+    "pertanyaan": "When a company builds a new factory, not only owners and employees are affected, but also the surrounding community, suppliers, consumers, and government. These groups collectively are called:",
+    "pilihan": [
+        "Only managers",
+        "Anyone affected by the business (stakeholders)",
+        "Only customers",
+        "Only employees",
+        "Only investors"
+    ],
+    "jawaban_benar": "Anyone affected by the business"
+},
+{
+    "tipe": "pilihan_ganda",
+    "pertanyaan": "In one country, bribery is considered a normal way to expedite matters, while in another it is a serious crime. The ethical view that right or wrong depends on local cultural context is called:",
+    "pilihan": [
+        "Universal rules",
+        "Context-based ethics (relativism)",
+        "Strict law",
+        "Profit focus",
+        "No ethics"
+    ],
+    "jawaban_benar": "Context-based ethics"
+},
+{
+    "tipe": "pilihan_ganda",
+    "pertanyaan": "A company issues an official document containing values, principles, and rules of conduct that all employees must follow in daily decision-making. This document is called a:",
+    "pilihan": [
+        "Financial report",
+        "Code of ethics",
+        "Marketing plan",
+        "Employment contract",
+        "Activity schedule"
+    ],
+    "jawaban_benar": "Code of ethics"
+},
+{
+    "tipe": "pilihan_ganda",
+    "pertanyaan": "A public official asks a contractor for money so that the contractor can win a government project tender. The act of giving money to influence a decision is legally called:",
+    "pilihan": [
+        "Ethical action",
+        "Illegal incentive (bribery)",
+        "Transparency",
+        "Responsibility",
+        "Fairness"
+    ],
+    "jawaban_benar": "Illegal incentive"
+},
+{
+    "tipe": "pilihan_ganda",
+    "pertanyaan": "An e-commerce startup regularly publishes data about product defects, customer complaints, and its improvement processes openly on its website. This helps build long‑term relationships with customers. Trust is built through:",
+    "pilihan": [
+        "Deception",
+        "Transparency",
+        "Fraud",
+        "Manipulation",
+        "Bribery"
+    ],
+    "jawaban_benar": "Transparency"
+},
+{
+    "tipe": "pilihan_ganda",
+    "pertanyaan": "In a negotiation, a businessperson considers only how to maximize their own profit, without caring whether the business partner gains or loses. The ethical approach behind this behavior is called:",
+    "pilihan": [
+        "Others' benefit",
+        "Self-interest (egoism)",
+        "Legal compliance",
+        "Fairness",
+        "Culture"
+    ],
+    "jawaban_benar": "Self-interest"
+},
+{
+    "tipe": "pilihan_ganda",
+    "pertanyaan": "A manager faces two choices: lay off 50 employees to save the company from bankruptcy, or keep them and risk the entire company closing. Both options have serious moral consequences. This situation is called:",
+    "pilihan": [
+        "A clear answer",
+        "Conflicting choices (ethical dilemma)",
+        "No options at all",
+        "Legal rules only",
+        "No consequences"
+    ],
+    "jawaban_benar": "Conflicting choices"
+},
+{
+    "tipe": "pilihan_ganda",
+    "pertanyaan": "After an environmental pollution scandal is revealed, the company loses customers, investors withdraw funds, and its brand is perceived negatively. The most important factor for corporate reputation in the long term is:",
+    "pilihan": [
+        "Ethical behavior",
+        "Office design",
+        "Company location",
+        "Logo",
+        "Brand color"
+    ],
+    "jawaban_benar": "Ethical behavior"
 },
 
+# =========================
+# USE CASE (10 FILL-IN-THE-BLANK) - ENRICHED STORY
+# =========================
 {
-    "tipe": "isian_singkat",
-    "pertanyaan": "The principles that define right and wrong behavior are called ______.",
-    "jawaban_benar": "Ethics"
-},
-{
-    "tipe": "isian_singkat",
-    "pertanyaan": "A situation involving conflicting moral choices is called an ethical ______.",
-    "jawaban_benar": "Dilemma"
-},
-{
-    "tipe": "isian_singkat",
-    "pertanyaan": "The stage of moral development based on internal principles is called ______-conventional.",
-    "jawaban_benar": "Post"
-},
-{
-    "tipe": "isian_singkat",
-    "pertanyaan": "The principle that focuses on fairness and equality is called distributive ______.",
-    "jawaban_benar": "Justice"
-},
-{
-    "tipe": "isian_singkat",
-    "pertanyaan": "The idea of maximizing benefits over harms is known as ______.",
-    "jawaban_benar": "Utilitarianism"
+    "tipe": "use_case_group",
+    "bacaan": """
+David is a senior executive at the multinational company "GreenEnergy Inc.," which claims to be environmentally friendly and highly ethical. One day, David discovers strong evidence that over the past two years his company has committed two serious violations:
+
+1. **Financial statement falsification** - Top management deliberately inflated revenues and hid huge losses from a failed renewable energy project. This was done to attract new investors and keep the stock price high.
+
+2. **Secret toxic waste dumping** - Instead of recycling hazardous waste from production, the company hired an illegal operator to dump the waste into the river at night. The illegal dumping cost only one‑fifth of proper treatment.
+
+Publicly, GreenEnergy Inc. aggressively campaigns about its environmental commitment, publishes sustainability reports full of green photos, and even received an award as "Most Ethical Company" last year.
+
+If David reports his findings to authorities (such as the SEC or environmental agency), he could be fired, sued, or ostracized from the industry. But if he stays silent, the dishonest practices will continue to harm investors (who bought shares based on false reports) and the communities living near the polluted river.
+
+David is deeply torn. On one hand, his family depends on his high salary. On the other hand, his conscience aches over the deception and environmental damage. He must choose between protecting his career or doing what is ethically right.
+""",
+    "soal": [
+        {"pertanyaan": "The situation where David must choose between two options, both with serious moral consequences, is called an ethical ______.", "jawaban_benar": "dilemma"},
+        {"pertanyaan": "David's act of reporting the company's violations to authorities even at his own expense is known as ______.", "jawaban_benar": "whistleblowing"},
+        {"pertanyaan": "The practice of deliberately inflating revenues in financial reports falls under the category of ______.", "jawaban_benar": "fraud"},
+        {"pertanyaan": "Dumping toxic waste into the river violates the company's ______ responsibility toward society and the environment.", "jawaban_benar": "social"},
+        {"pertanyaan": "The concept that emphasizes long‑term balance between economic, social, and environmental factors is called ______.", "jawaban_benar": "sustainability"},
+        {"pertanyaan": "The company hides the facts about waste dumping and false financial reports. The act of concealing the truth is called ______.", "jawaban_benar": "deception"},
+        {"pertanyaan": "If David chooses to keep his job and remain silent for the sake of his high salary, he shows a lack of ______ (consistency between principles and actions).", "jawaban_benar": "integrity"},
+        {"pertanyaan": "The ethical approach that would suggest David should report because it produces the greatest good for the greatest number of people (investors, the community) is called ______.", "jawaban_benar": "utilitarianism"},
+        {"pertanyaan": "All parties affected by David's decision – such as investors, riverside communities, employees, and the government – are called ______.", "jawaban_benar": "stakeholders"},
+        {"pertanyaan": "The ethical principle that requires harm from environmental pollution to be fairly compensated to victims is the principle of ______.", "jawaban_benar": "justice"}
+    ]
 }
+
 ]
 
+# =========================
+# SESSION STATE
+# =========================
+if "submitted" not in st.session_state:
+    st.session_state.submitted = False
 
-# Inisialisasi session state untuk menyimpan status koreksi
-if "cek_dilakukan" not in st.session_state:
-    st.session_state.cek_dilakukan = False
+def norm(x):
+    return x.strip().lower() if x else ""
 
-# Tampilkan setiap soal
+st.title("📘 Business Ethics Quiz - Detailed Version")
+
+score = 0
+total = 0
+
 for i, soal in enumerate(soal_list):
-    with st.container():
-        st.markdown(f"**_Question {i+1}_**")
-        st.markdown(f"{soal['pertanyaan']}")
-        
-        # Input berdasarkan tipe soal
-        if soal["tipe"] == "pilihan_ganda":
-            jawaban_user = st.radio(
-                "Pilih jawaban:",
-                options=soal["pilihan"],
-                key=f"mc_{i}",
-                index=None,  # tidak ada default
-                label_visibility="collapsed"  # menyembunyikan label "Pilih jawaban" agar lebih ringkas
-            )
-        else:  # isian
-            jawaban_user = st.text_input(
-                "Masukkan jawaban:",
-                key=f"sa_{i}",
-                label_visibility="collapsed"
-            ).strip()
-        
-        # Jika sudah dicek, tampilkan feedback
-        if st.session_state.cek_dilakukan:
-            # Ambil jawaban user dari session state
-            if soal["tipe"] == "pilihan_ganda":
-                jawaban = st.session_state.get(f"mc_{i}")
-            else:
-                jawaban = st.session_state.get(f"sa_{i}", "").strip()
-            
-            # Pastikan jawaban tidak None untuk pilihan ganda
-            if jawaban is None:
-                jawaban = ""
-            
-            # Bandingkan dengan jawaban benar (case insensitive untuk isian)
-            if soal["tipe"] == "isian":
-                benar = jawaban.lower() == soal["jawaban_benar"].lower()
-            else:
-                benar = jawaban == soal["jawaban_benar"]
-            
-            if benar:
-                st.success("✅ Jawaban Anda benar!")
-            else:
-                st.error(f"❌ Jawaban Anda salah. Jawaban yang benar: {soal['jawaban_benar']}")
-        
-        st.markdown("---")
+    st.markdown(f"### Question {i+1}")
 
-# Tombol untuk mengecek jawaban
-col1, col2, col3 = st.columns([1, 2, 1])
+    if soal["tipe"] == "pilihan_ganda":
+        key = f"mc_{i}"
+        st.radio(soal["pertanyaan"], soal["pilihan"], key=key, index=None)
+
+        if st.session_state.submitted:
+            total += 1
+            user = st.session_state.get(key)
+            if user == soal["jawaban_benar"]:
+                score += 1
+                st.success("✅ Correct")
+            else:
+                st.error(f"❌ Wrong. Correct answer: {soal['jawaban_benar']}")
+
+    elif soal["tipe"] == "use_case_group":
+        st.info(soal["bacaan"])
+        for j, sub in enumerate(soal["soal"]):
+            key = f"use_{i}_{j}"
+            st.text_input(sub["pertanyaan"], key=key)
+
+            if st.session_state.submitted:
+                total += 1
+                user = st.session_state.get(key, "")
+                if norm(user) == norm(sub["jawaban_benar"]):
+                    score += 1
+                    st.success("✅ Correct")
+                else:
+                    st.error(f"❌ Wrong. Correct answer: {sub['jawaban_benar']}")
+
+    st.markdown("---")
+
+col1, col2, col3 = st.columns([1,2,1])
+
 with col2:
-    if st.button("🔍 Cek Jawaban", use_container_width=True):
-        st.session_state.cek_dilakukan = True
+    if st.button("🔍 Submit Answers", use_container_width=True):
+        st.session_state.submitted = True
         st.rerun()
 
-# Tombol untuk mengulang (reset)
-if st.session_state.cek_dilakukan:
-    col1, col2, col3 = st.columns([1, 2, 1])
-    with col2:
-        if st.button("🔄 Coba Lagi", use_container_width=True):
-            # Hapus semua jawaban dari session state
-            for key in list(st.session_state.keys()):
-                if key.startswith("mc_") or key.startswith("sa_"):
-                    del st.session_state[key]
-            st.session_state.cek_dilakukan = False
-            st.rerun()
+if st.session_state.submitted:
+    percent = (score / total * 100)
+    st.success(f"Your score: {score}/{total} ({percent:.1f}%)")
 
-# Footer
-st.markdown("---")
-st.markdown("<p style='text-align: center;'>Selamat belajar! 🌟</p>", unsafe_allow_html=True)
+    with col2:
+        if st.button("🔄 Reset Quiz", use_container_width=True):
+            for k in list(st.session_state.keys()):
+                if k.startswith(("mc_", "use_")):
+                    del st.session_state[k]
+            st.session_state.submitted = False
+            st.rerun()
