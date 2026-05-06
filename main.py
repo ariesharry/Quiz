@@ -19,6 +19,8 @@ halaman_data = [
     ("pages/bab_1/b1_9.py", "Latihan 9 - Week 6", "Management"),
     ("pages/bab_1/b1_10.py", "Latihan 10 - Week 7", "Management"),
     ("pages/bab_1/b1_11.py", "Latihan 11 - Week 7", "Management"),
+    ("pages/bab_1/b1_12.py", "Latihan 12 - Week 8", "Management"),
+    ("pages/bab_1/b1_13.py", "Latihan 13 - Week 8", "Management"),
     # Marketing
     ("pages/bab_2/b2_1.py", "Latihan 1", "Marketing"),
     ("pages/bab_2/b2_2.py", "Latihan 2", "Marketing"),
