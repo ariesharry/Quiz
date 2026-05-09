@@ -35,6 +35,7 @@ halaman_data = [
     ("pages/bab_2/b2_8.py", "TEST PRACTICE QUESTIONS 1", "Marketing"),
     ("pages/bab_2/b2_9.py", "TEST PRACTICE QUESTIONS 2", "Marketing"),
     ("pages/bab_2/b2_10.py", "Latihan 8", "Marketing"),
+    ("pages/bab_2/b2_11.py", "Latihan 9", "Marketing"),
     # Management terakhir
     
 ]
