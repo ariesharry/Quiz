@@ -261,8 +261,6 @@ if "submitted" not in st.session_state:
 def norm(x):
     return x.strip().lower() if x else ""
 
-st.title("📘 Operations & Supply Chain Management Quiz")
-
 score = 0
 total = 0
 
